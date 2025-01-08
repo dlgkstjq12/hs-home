@@ -987,6 +987,14 @@ input.Enter_text::placeholder {
 .margin_top_90{
     margin-top: 90px;
 }
+.limited-size {
+    width: 100%; /* 기본 너비 */
+    height: auto; /* 기본 높이 */
+    max-width: 500px; /* 최대 너비 제한 */
+    max-height: 300px; /* 최대 높이 제한 */
+    background-color: lightblue;
+    overflow: none; /* 콘텐츠가 넘칠 경우 스크롤 활성화 */
+}
 
 
 
