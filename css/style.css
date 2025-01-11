@@ -542,7 +542,7 @@ img.padding_right_10 {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #ffffff;
+    color: rgb(0, 0, 0);
     text-align: center;
     margin: 0px;
 }
