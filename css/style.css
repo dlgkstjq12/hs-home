@@ -324,7 +324,7 @@ img.padding_right_10 {
     float: left;
     padding-bottom: 90px;
     background-color: #fafafa;
-    height: auto;
+    height: 100%;
 }
 
 .banner_img {
@@ -332,13 +332,22 @@ img.padding_right_10 {
     height: 400px;
 }
 
+.banner_large_taital {
+    width: 50%;
+    font-weight: bold;
+    font-size: 100px;
+    color: rgb(0, 128, 128);
+    text-align: center;
+}
+
 .banner_taital {
-    width: 100%;
-    float: left;
+    width: 50%;
+    float: center;
     font-weight: bold;
     font-size: 76px;
     color: #060606;
-    line-height: 90px;
+    /* line-height: 90px; */
+    text-align: center;
 }
 
 .banner_text{
@@ -398,6 +407,11 @@ img.padding_right_10 {
 }
 
 
+#main_slider a.carousel-control-down {
+    position: absolute;
+    top: 50%;
+}
+
 #main_slider a.carousel-control-prev {
     position: absolute;
     left: 1137px;
@@ -410,6 +424,7 @@ img.padding_right_10 {
     top: 27%;
 }
 
+#main_slider a.carousel-control-down,
 #main_slider .carousel-control-prev,
 #main_slider .carousel-control-next {
     width: 68px;
@@ -420,6 +435,8 @@ img.padding_right_10 {
     color: #ffffff;
 }
 
+#main_slider .carousel-control-down:hover,
+#main_slider .carousel-control-down:focus,
 #main_slider .carousel-control-prev:hover,
 #main_slider .carousel-control-next:hover,
 #main_slider .carousel-control-prev:focus,
@@ -935,3 +952,82 @@ tbody tr:hover {
     cursor: pointer;
 }
 
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-container {
+  animation: fadein 5s ease 3s;
+  -webkit-animation: fadein 3s; /* Safari and Chrome */
+  background-image: url("../images/banner-img.jpg");
+  background-size: cover;
+  background-size: center;
+  width: 100%;
+  height: 1000px;
+  color: black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+    
+  /* 추가 */
+  position: relative;
+  isolation: isolate;
+}
+
+/* 추가 */
+.hero-container::after {
+  content: '';
+  position: absolute;
+  background: white;
+  z-index: -1;
+  inset: 0;
+  opacity: 0.4;
+}
+
+.arrow-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index:1000;
+}
+.arrow {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.section {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-bottom: 2px solid gray;
+}
