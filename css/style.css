@@ -199,7 +199,7 @@ button {
 }
 
 .layout_padding {
-     padding-top: 90px;
+     padding-top: 8%;
      padding-bottom: 0px;
 }
 
@@ -209,9 +209,12 @@ button {
 /* header section start */
 
 .header_section {
+    background-color: #ffffff;
+    position: fixed;
     width: 100%;
     float: left;
     padding: 20px 0px;
+    z-index:2000;
 }
 
 .toggle_icon{ 
@@ -333,7 +336,7 @@ img.padding_right_10 {
 }
 
 .banner_large_taital {
-    width: 50%;
+    width: 30%;
     font-weight: bold;
     font-size: 100px;
     color: rgb(0, 128, 128);
@@ -341,7 +344,7 @@ img.padding_right_10 {
 }
 
 .banner_taital {
-    width: 50%;
+    width: 70%;
     float: center;
     font-weight: bold;
     font-size: 76px;
@@ -977,7 +980,7 @@ tbody tr:hover {
   background-size: cover;
   background-size: center;
   width: 100%;
-  height: 1000px;
+  height: 800px;
   color: black;
   display:flex;
   justify-content: center;

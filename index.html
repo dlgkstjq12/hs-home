@@ -42,18 +42,24 @@
                      <li><img src="images/call-icon.png" class="padding_right_10"><a href="#">Call: 010-7285-1455</a></li>
                      <li><img src="images/mail-icon.png" class="padding_right_10"><a href="#">Email: dlgkstjq623@naver.com</a></li>
                      <li><img src="images/map-icon.png" class="padding_right_10"><a href="#">Location: 인천광역시 남동구 만수동 만수서로 105번길 40-18</a></li>
+                     <li><img src="images/call-icon.png" class="padding_right_10"><a href="https://dlgkstjq623.tistory.com" target="_blank">Blog: https://dlgkstjq623.tistory.com</a></li>
+                     <li><img src="images/call-icon.png" class="padding_right_10"><a href="https://github.com/dlgkstjq12" target="_blank">GitHub: https://github.com/dlgkstjq12</a></li>
                   </ul>
                </div>
-               <div class="menu_text">
-                  <div id="myNav" class="overlay">
-                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                     <div class="overlay-content">
-                        <a href="index.html">메인</a>
-                        <a href="personalStatement.html">자기소개서</a>
-                        <a href="personalInformation.html">경력 / 학력 / 자격증</a>
-                     </div>
-                  </div>
-                  <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png" class="toggle_menu"></span>
+            </div>
+         </div>
+         <div class="container-fluid">
+            <div class="costum_header">
+               <h1>Menu</h1>
+               <div class="contact_menu">
+                  <ul>
+                     <li class="padding_right_10" onclick="moveSections(0)">맨위</li>
+                     <li class="padding_right_10" onclick="moveSections(1)">보유기술</li>
+                     <li class="padding_right_10" onclick="moveSections(2)">경력 / 학력/ 자격증</li>
+                     <li class="padding_right_10" onclick="moveSections(3)">경력기술서</li>
+                     <li class="padding_right_10" onclick="moveSections(4)">자기소개서</li>
+                     <li class="padding_right_10" onclick="moveSections(5)">개인프로필</li>
+                  </ul>
                </div>
             </div>
          </div>
@@ -61,23 +67,24 @@
       <!-- header section end -->
       
       <!-- banner section start -->
-      <div class="services_section layout_padding">
+      <div id="section1" class="services_section layout_padding">
           <div class="hero-container">
-             <h1 class="banner_large_taital layout_padding">웹 개발 전문가</h1>
-             <h1 class="banner_taital layout_padding">회사의 발전을 이끌어갈 인재입니다.</h1>
+              <h1 class="banner_large_taital"><span style="color: #0c426e">이한섭</span></h1>
+             <h1 class="banner_taital"> Web Programmer <br> 회사의 발전을 이끌어갈 인재입니다.</h1>
          </div>
       </div>
       <!-- banner section end -->
 
-       <div class="services_section layout_padding">
-          <div class="arrow-container">
+      <div class="services_section layout_padding">
+         <div class="arrow-container">
             <div class="arrow" onclick="moveStep(-1)">&#8593;</div>
             <div class="arrow" onclick="moveStep(1)">&#8595;</div>
-          </div>
-       </div>
-
+         </div>
+      </div>
+      <div id="section2" class="services_section layout_padding">
+      </div>
       <!-- services section start -->
-      <div id="section1" class="services_section layout_padding">
+      <div class="services_section layout_padding">
          <div class="container">
             <h1 class="services_taital">보유 <span style="color: #0c426e">기술</span></h1>
             <div class="services_section_2 layout_padding">
@@ -159,7 +166,7 @@
       </div>
       <!-- choose section end -->
       <!-- testimonial section start -->
-      <div id="section2" class="testimonial_section layout_padding">
+      <div id="section3" class="testimonial_section layout_padding">
          <div class="container">
             <h1 class="testimonial_taital">개인 프로필</h1>
             <div class="testimonial_section_2">
@@ -261,6 +268,10 @@
             if (currentIndex < 0) currentIndex = 0;
             if (currentIndex >= sections.length) currentIndex = sections.length - 1;
             sections[currentIndex].scrollIntoView({ behavior: 'smooth' });
+         }
+         
+         function moveSections(direction) {
+            sections[direction].scrollIntoView({ behavior: 'smooth' });
          }
       </script>   
    </body>
