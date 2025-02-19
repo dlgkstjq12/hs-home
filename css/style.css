@@ -223,6 +223,28 @@ button {
     color: #ffffff;
 }
 
+.small_menu {
+    width: 100%;
+}
+
+.small_menu ul{
+    list-style: none;
+    text-align: center;
+}
+
+.small_menu li{
+    font-weight: bold;
+    font-size: 34px;
+    color: #000080;
+    padding-right: 2%;
+    float: left;
+}
+
+.small_menu li:hover{
+    cursor:pointer;
+    color: #c0c0c0;
+}
+
 .contact_menu {
     width: 100%;
     padding-top: 20px;
@@ -249,12 +271,16 @@ img.padding_right_10 {
     padding-right: 20px;
 }
 
+.padding_right_10 {
+    padding-right: 50px;
+}
+
 .costum_header{
     width: 100%;
     display: flex;
 }
 .logo {
-    width: 33%;
+    width: 50%;
     float: left;
 }
 .menu_text {
@@ -338,7 +364,7 @@ img.padding_right_10 {
 .banner_large_taital {
     width: 30%;
     font-weight: bold;
-    font-size: 100px;
+    font-size: 50px;
     color: rgb(0, 128, 128);
     text-align: center;
 }
@@ -458,6 +484,22 @@ img.padding_right_10 {
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+.information_taital {
+    width: 100%;
+    font-size: 30px;
+    color: #252525;
+    text-align: center;
+    font-weight: bold;
+}
+
+.information_taital::after {
+    position: absolute;
+    width: 85px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
 }
 
 .services_taital {
@@ -710,15 +752,17 @@ img.padding_right_10 {
     width: 100%;
 }
 .client_image_section{
-    width: 15%;
-    float: left;
+  width: 20%;
+  float: left;
 }
 .client_text_section{
-    width: 85%;
+    width: 80%;
     float: left;
 }
 
 .client_img {
+    width: 90%;
+    height: 100%;
 }
 
 .testimonial_text {

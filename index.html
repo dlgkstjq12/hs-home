@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>초보개발자 이한섭의 이력서 페이지</title>
+      <title>개발자 이한섭의 이력서 페이지</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -37,28 +37,14 @@
          <div class="container-fluid">
             <div class="costum_header">
                <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
-               <div class="contact_menu">
+               <div class="small_menu">
                   <ul>
-                     <li><img src="images/call-icon.png" class="padding_right_10"><a href="#">Call: 010-7285-1455</a></li>
-                     <li><img src="images/mail-icon.png" class="padding_right_10"><a href="#">Email: dlgkstjq623@naver.com</a></li>
-                     <li><img src="images/map-icon.png" class="padding_right_10"><a href="#">Location: 인천광역시 남동구 만수동 만수서로 105번길 40-18</a></li>
-                     <li><img src="images/call-icon.png" class="padding_right_10"><a href="https://dlgkstjq623.tistory.com" target="_blank">Blog: https://dlgkstjq623.tistory.com</a></li>
-                     <li><img src="images/call-icon.png" class="padding_right_10"><a href="https://github.com/dlgkstjq12" target="_blank">GitHub: https://github.com/dlgkstjq12</a></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <div class="container-fluid">
-            <div class="costum_header">
-               <h1>Menu</h1>
-               <div class="contact_menu">
-                  <ul>
-                     <li class="padding_right_10" onclick="moveSections(0)">맨위</li>
-                     <li class="padding_right_10" onclick="moveSections(1)">보유기술</li>
-                     <li class="padding_right_10" onclick="moveSections(2)">경력 / 학력/ 자격증</li>
-                     <li class="padding_right_10" onclick="moveSections(3)">경력기술서</li>
-                     <li class="padding_right_10" onclick="moveSections(4)">자기소개서</li>
-                     <li class="padding_right_10" onclick="moveSections(5)">개인프로필</li>
+                     <li onclick="moveSections(0)"><a>【Top】</a></li>
+                     <li onclick="moveSections(1)"><a>【Skill】</a></li>
+                     <li onclick="moveSections(2)"><a>【Information】</a></li>
+                     <li onclick="moveSections(3)"><a>【Statement】</a></li>
+                     <li onclick="moveSections(4)"><a>【Projects】</a></li>
+                     <li onclick="moveSections(5)"><a>【Profile】</a></li>
                   </ul>
                </div>
             </div>
@@ -69,22 +55,16 @@
       <!-- banner section start -->
       <div id="section1" class="services_section layout_padding">
           <div class="hero-container">
-              <h1 class="banner_large_taital"><span style="color: #0c426e">이한섭</span></h1>
-             <h1 class="banner_taital"> Web Programmer <br> 회사의 발전을 이끌어갈 인재입니다.</h1>
+              <h1 class="banner_taital"><span style="color: rgb(255, 255, 255)">- 이한섭 -<br>웹 / 백엔드 개발자 포트폴리오<br> </span><span style="color: #0c426e"></span>회사의 발전을 이끌어갈 인재입니다.</h1>
          </div>
       </div>
       <!-- banner section end -->
-
-      <div class="services_section layout_padding">
-         <div class="arrow-container">
-            <div class="arrow" onclick="moveStep(-1)">&#8593;</div>
-            <div class="arrow" onclick="moveStep(1)">&#8595;</div>
-         </div>
-      </div>
-      <div id="section2" class="services_section layout_padding">
+      <div class="arrow-container">
+         <div class="arrow" onclick="moveStep(-1)">&#8593;</div>
+         <div class="arrow" onclick="moveStep(1)">&#8595;</div>
       </div>
       <!-- services section start -->
-      <div class="services_section layout_padding">
+      <div id="section2" class="services_section layout_padding">
          <div class="container">
             <h1 class="services_taital">보유 <span style="color: #0c426e">기술</span></h1>
             <div class="services_section_2 layout_padding">
@@ -165,8 +145,202 @@
          </div>
       </div>
       <!-- choose section end -->
+      
+      <!-- providing section start -->
+      <div id="section2" class="services_section layout_padding">
+         <div class="container">
+            <h1 class="information_taital">경력 (총 4년 6개월)</h1>
+         </div>
+      </div>
+      <div class="services_section_2 layout_padding">
+        <div class="container">
+        <table>
+           <tr>
+             <th scope="col">년 / 월</td>
+             <th scope="col">회사명</td>
+             <th scope="col">직급</td>
+             <th scope="col">직무</td>
+           </tr>
+           <tr>
+             <td>2024. 11 ~ 2024. 12 (2개월)</td>
+             <td>상상브레이커스</td>
+             <td>개발부 과장</td>
+             <td>웹/백엔드 개발</td>
+           </tr>
+           <tr>
+             <td>2021. 05 ~ 2024. 07 (3년 3개월)</td>
+             <td>아이캔매니지먼트</td>
+             <td>개발부 과장</td>
+             <td>분석/설계/웹/백엔드 개발</td>
+           </tr>
+           <tr>
+             <td>2020. 04 ~ 2021. 04 (1년 1개월)</td>
+             <td>이노시스컴퍼니</td>
+             <td>개발부 사원</td>
+             <td>분석/설계/웹/백엔드 개발</td>
+           </tr>
+          </table>
+        </div>
+      </div>
+      
+      <div class="services_section layout_padding">
+        <h1 class="information_taital">학력</h1>
+        <div class="container">
+            <table>
+               <tr>
+                 <th scope="col">년 / 월</td>
+                 <th scope="col">학력사항</td>
+               </tr>
+               <tr>
+                 <td>2020. 06 ~ 2022. 02</td>
+                 <td>학점은행제 (컴퓨터공학과)</td>
+               </tr>
+               <tr>
+                 <td>2011. 03 ~ 2015. 02</td>
+                 <td>유한대학 (기계과)</td>
+               </tr>
+            </table>
+        </div>
+      </div>
+      
+      <div class="services_section layout_padding">
+         <div class="container">
+            <h1 class="information_taital">자격증</h1>
+         </div>
+      </div>
+      <div class="services_section_2 layout_padding">
+        <div class="container">
+            <table>
+               <tr>
+                 <th scope="col">취득일</td>
+                 <th scope="col">자격증명</td>
+                 <th scope="col">발급기관</td>
+               </tr>
+               <tr>
+                 <td>2019. 05</td>
+                 <td>정보처리기사</td>
+                 <td>한국산업인력공단</td>
+               </tr>
+               <tr>
+                 <td>2015. 11</td>
+                 <td>산업안전산업기사</td>
+                 <td>한국산업인력공단</td>
+               </tr>
+             </table>
+        </div>
+      </div>
+      <!-- providing section end -->
+      
+      <!-- providing section start -->
+      <div id="section3" class="services_section layout_padding">
+         <div class="container">
+            <h1 class="services_taital"><span style="color: rgb(0, 0, 0)">자기소개서</span>
+              <!-- 이미지 태그 -->
+              <a id="downloadLink" href="pdf/이력서_20250219.pdf" target="_blank" download="pdf/이력서_20250219.pdf">
+                  <img src="images/download-img.png" alt="클릭하여 PDF 다운로드">
+              </a>
+            </h1>
+         </div>
+      </div>
+     
+      <!-- providing section start -->
+      <div class="services_section layout_padding">
+         <div class="container">
+            <h1 class="services_title">[미래를 생각하고 노력하는 개발자]</h1>
+         </div>
+      </div>
+      <div class="providing_section_1 layout_padding">
+        <div class="container">
+            <div class="person_text">
+                여러가지 프로젝트를 하면서, Java, JavaScript, Jquary, Websquare5, PostgreSQL, Oracle, 전자정부 프레임워크 등을 사용하면서 
+                회사의 이익에 이바지하기위해 노력했었고, 현재는 Spring Boot쪽을 공부하면서,                                             
+                실무쪽에서 부족한 부분을 매우기위해 노력하고 있습니다.                                                                  
+                이외에 귀사에서 필요로 하는 기술이나 스킬이 있다면, <br>
+                추가적으로 공부를 해서 회사의 이익에도 이바지하고, 제 미래에도 도움이 될 수 있도록 노력할려고 합니다.
+            </div> 
+        </div>
+      </div>
+      
+      <div class="providing_section layout_padding">
+         <div class="container">
+            <h1 class="services_title">[경험치가 있는 개발자]</h1>
+         </div>
+      </div>
+      <div class="providing_section_1 layout_padding">
+        <div class="container">
+            <div class="person_text">
+                저의 경력은 총 5년차이고, 주로 Java를 사용한 Spring 프로젝트를 사용해서 작업했었고,   가장 오래있었던 프로젝트에서는 Excel에 구현된 VBScript를 웹 플랫폼으로 변환해서 구현하는 
+                보험료 계산 플랫폼에서, 프로젝트 개발 -≫ 고도화 -≫ 운영 단계까지 참여해서, 프로젝트를 끝까지 이끌어본 경험이 있습니다.  
+            </div>
+        </div> 
+      </div>
+      
+      <div class="providing_section layout_padding">
+         <div class="container">
+            <h1 class="services_title">[협업이 잘되는 개발자]</h1>
+         </div>
+      </div>
+      <div class="providing_section_1 layout_padding">
+        <div class="container">
+            <div class="person_text">
+                보험료 계산 플랫폼 개발 프로젝트를 하면서, 현업과 데이터 정합성 관련 갈등을 겪은 경험이 있었는데, 결국에는 소통이 핵심이었습니다.                                          
+                고객이 말하는 제안사항과 요구사항을 명확히 정리하고, 그것을 토대로 개발하면서 중간중간에 소통을 잘해서, 프로젝트를 성공적으로 마친 경험이 있습니다. 
+            </div>
+        </div> 
+      </div>
+      
+      <div class="providing_section layout_padding">
+         <div class="container">
+            <h1 class="services_title">[성장과정 및 학교생활]</h1>
+         </div>
+      </div>
+      <div class="providing_section_1 layout_padding">
+        <div class="container">
+            <div class="person_text">
+                어렸을때 부터 저는 컴퓨터에 대해 관심이 많이 있었지만, 기계쪽 일을 하시는 아버지의 추천으로 인해서 공대로 들어가 기계과에 입학을 하게 되었습니다.     
+                하지만 용접이나 기계를 다루는 것들이 저에게 잘 맞지 않아서, 졸업을 한 후에도 이런 저런 고민을 하다 안전관리쪽에                                
+                그 당시 유망하다고 생각된 안전관리 쪽에 눈을 돌려서 자격증을 취득하고, 건설업 쪽에 취직을 하게 되었습니다.                               
+                월급은 기계쪽 일을 하던 제 또래들보다 많이 받았었지만, 생명이 위험하기도 하고, 전망도 불투명해서                                     
+                제가 하고싶던 일인 프로그래밍쪽으로 발을 돌리게 되었습니다.                                                                   
+            </div>
+        </div> 
+      </div>
+
+      <div class="providing_section layout_padding">
+         <div class="container">
+            <h1 class="services_title">[성격의 장단점]</h1>
+         </div>
+      </div>
+      <div class="providing_section_1 layout_padding">
+        <div class="container">
+            <div class="person_text">
+                제 성격의 장점으로는 성실함과 책임감 입니다.                                                                                           
+                어렸을때부터 학교다니면서 지각을 하거나 결석을 한 적이 없고, 맡은 일을 뛰어나게 잘하진 못하더라도, 해낼려고 노력하는 모습이 많이 보인 다는 얘기를 많이 들었습니다.   
+                귀사에 입사해서도 처음에는 회사에 시스템에 적응해야하기 때문에 배울점들이 많이 있겠지만, 그러한 점들을 빨리 익히고, 적응해서                              
+                회사에 이익을 가져다줄 수 있도록 노력하겠습니다.                                                                                     
+                그리고 장점이면서 단점도 될 수 있을거 같은데 저는 공과 사를 구분하는 성격이라서, 일할 때랑 평상시의 모습이 다르다는                                      
+                소리를 많이 들었습니다. 이러한 저의 성격이 일할 때 책임감을 좀 더 가지게 해주는 장점이 되는것 같습니다.                                                
+            </div>
+        </div> 
+      </div>
+      
+      <div class="providing_section layout_padding">
+         <div class="container">
+            <h1 class="services_title">[회사의 미래에 도움이 되는 개발자]</h1>
+         </div>
+      </div>
+      <div class="providing_section_1 layout_padding">
+        <div class="container">
+            <div class="person_text">
+                저의 학습능력과 협업 능력, 그리고 프로젝트를 통해서 얻은 여러가지 성공과 실패 경험을 해본 개발자로 소개드리고 싶고,
+                이런 경험들을 통해서 귀사의 이익에 공헌할 수 있다고 생각합니다.
+            </div>
+        </div> 
+      </div>
+      <!-- providing section end -->
+
       <!-- testimonial section start -->
-      <div id="section3" class="testimonial_section layout_padding">
+      <div id="section4" class="testimonial_section layout_padding">
          <div class="container">
             <h1 class="testimonial_taital">개인 프로필</h1>
             <div class="testimonial_section_2">
@@ -176,12 +350,15 @@
                         <div class="testimonial_box">
                            <div class="tectimonial_mail">
                               <div class="client_image_section">
-                                 <img src="images/client-img.jpg" class="client_img">
+                                 <img src="images/client-img.jpg">
                               </div>
                               <div class="client_text_section">
                                  <p class="testimonial_text">미래를 준비하고 발전할 수 있는 프로그래머</p>
                                  <h4 class="joech_text">Han Sub Lee (2020.04 ~ 2024.12 - 경력 4년 6개월)</h4>
-                                 <p class="customer_text">Web Programmer</p>
+                                 <p class="customer_text">전화번호 : 010-7285-1455</p>
+                                 <p class="customer_text">이메일 : dlgkstjq623@naver.com</p>
+                                 <p class="customer_text">주소 : 인천광역시 남동구 만수동 만수서로 105번길 40-18</p>
+                                 <p class="customer_text">직무 : Web Programmer</p>
                               </div>
                            </div>
                         </div>
@@ -203,14 +380,10 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-3 col-sm-6">
-                  <h2 class="useful_text">Contact Us</h2>
+                  <h2 class="useful_text">Contact Me</h2>
                   <div class="location_text"><img src="images/map-icon1.png"><a href="#"><span class="padding_left_15">인천광역시 남동구 만수동 <br> 만수서로 105번길 40-18</span></a></div>
                   <div class="location_text"><img src="images/call-icon1.png"><a href="#"><span class="padding_left_15">010-7285-1455</span></a></div>
                   <div class="location_text"><img src="images/mail-icon1.png"><a href="#"><span class="padding_left_15">dlgkstjq623@naver.com</span></a></div>
-               </div>
-               <div class="col-lg-3 col-sm-6">
-                  <h2 class="useful_text">Opening Time</h2>
-                  <p class="footer_text">07:00am   to  10:00 pm</p>
                </div>
             </div>
          </div>
