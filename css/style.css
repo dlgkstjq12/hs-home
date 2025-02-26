@@ -26,7 +26,7 @@ html {
 
 body {
      color: #666666;
-     font-size: 14px;
+     font-size: 0.8750rem;
      font-family: 'Poppins', sans-serif;     
      line-height: 1.80857;
      font-weight: normal;
@@ -53,7 +53,7 @@ h6 {
      letter-spacing: 0;
      font-weight: normal;
      position: relative;
-     padding: 0 0 10px 0;
+     padding: 0 0 0.6250rem 0;
      font-weight: normal;
      line-height: normal;
      color: #111111;
@@ -61,27 +61,27 @@ h6 {
 }
 
 h1 {
-     font-size: 24px
+     font-size: 1.5000rem
 }
 
 h2 {
-     font-size: 22px
+     font-size: 1.3750rem
 }
 
 h3 {
-     font-size: 18px
+     font-size: 1.1250rem
 }
 
 h4 {
-     font-size: 16px
+     font-size: 1.0000rem
 }
 
 h5 {
-     font-size: 14px
+     font-size: 0.8750rem
 }
 
 h6 {
-     font-size: 13px
+     font-size: 0.8125rem
 }
 
 *,
@@ -110,16 +110,16 @@ button:focus {
 ul,
 li,
 ol {
-     margin: 0px;
-     padding: 0px;
+     margin: 0.0000rem;
+     padding: 0.0000rem;
      list-style: none;
 }
 
 p {
-     margin: 20px;
+     margin: 1.2500rem;
      font-weight: 300;
-     font-size: 15px;
-     line-height: 24px;
+     font-size: 0.9375rem;
+     line-height: 1.5000rem;
 }
 
 a {
@@ -153,16 +153,16 @@ img {
 }
 
 .btn-custom {
-     margin-top: 20px;
+     margin-top: 1.2500rem;
      background-color: transparent !important;
-     border: 2px solid #ddd;
-     padding: 12px 40px;
-     font-size: 16px;
+     border: 0.1250rem solid #ddd;
+     padding: 0.7500rem 2.5000rem;
+     font-size: 1.0000rem;
 }
 
 .lead {
-     font-size: 18px;
-     line-height: 30px;
+     font-size: 1.1250rem;
+     line-height: 1.8750rem;
      color: #767676;
      margin: 0;
      padding: 0;
@@ -182,8 +182,8 @@ img {
 }
 
 blockquote {
-     margin: 20px 0 20px;
-     padding: 30px;
+     margin: 1.2500rem 0 1.2500rem;
+     padding: 1.8750rem;
 }
 
 button {
@@ -200,11 +200,11 @@ button {
 
 .layout_padding {
      padding-top: 8%;
-     padding-bottom: 0px;
+     padding-bottom: 0.0000rem;
 }
 
 .padding_0{
-     padding: 0px;
+     padding: 0.0000rem;
 }
 /* header section start */
 
@@ -213,12 +213,12 @@ button {
     position: fixed;
     width: 100%;
     float: left;
-    padding: 20px 0px;
+    padding: 1.2500rem 0.0000rem;
     z-index:2000;
 }
 
 .toggle_icon{ 
-    font-size:33px;
+    font-size:2.0625rem;
     cursor:pointer; 
     color: #ffffff;
 }
@@ -234,7 +234,7 @@ button {
 
 .small_menu li{
     font-weight: bold;
-    font-size: 34px;
+    font-size: 2.1250rem;
     color: #000080;
     padding-right: 2%;
     float: left;
@@ -247,19 +247,19 @@ button {
 
 .contact_menu {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 1.2500rem;
 }
 .contact_menu ul{
-    margin: 0px;
-    padding: 0px;
+    margin: 0.0000rem;
+    padding: 0.0000rem;
     list-style: none;
     text-align: center;
 }
 .contact_menu li{
     float: left;
-    font-size: 18px;
+    font-size: 1.1250rem;
     color: #060606;
-    padding: 0px 20px;
+    padding: 0.0000rem 1.2500rem;
 }
 .contact_menu li a{
     color: #060606;
@@ -268,11 +268,11 @@ button {
     color: #0c426e;
 }
 img.padding_right_10 {
-    padding-right: 20px;
+    padding-right: 1.2500rem;
 }
 
 .padding_right_10 {
-    padding-right: 50px;
+    padding-right: 3.1250rem;
 }
 
 .costum_header{
@@ -290,14 +290,14 @@ img.padding_right_10 {
 }
 
 .menu_text ul {
-    margin: 0px;
-    padding: 0px;
+    margin: 0.0000rem;
+    padding: 0.0000rem;
 }
 
 .menu_text li {
     float: left;
-    padding-right: 60px;
-    font-size: 18px;
+    padding-right: 3.7500rem;
+    font-size: 1.1250rem;
     color: #ffffff;
 }
 
@@ -324,14 +324,14 @@ img.padding_right_10 {
 
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    top: 1.2500rem;
+    right: 2.8125rem;
+    font-size: 3.7500rem;
 }
 .overlay a {
-    padding: 0px;
+    padding: 0.0000rem;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1.3750rem;
     color: #f1f1f1;
     display: block;
     transition: 0.3s;
@@ -342,7 +342,7 @@ img.padding_right_10 {
     top: 10%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 1.8750rem;
 }
 /* header section end */
 
@@ -351,20 +351,20 @@ img.padding_right_10 {
 .banner_section {
     width: 100%;
     float: left;
-    padding-bottom: 90px;
+    padding-bottom: 5.6250rem;
     background-color: #fafafa;
     height: 100%;
 }
 
 .banner_img {
     width: 100%;
-    height: 400px;
+    height: 25.0000rem;
 }
 
 .banner_large_taital {
     width: 30%;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3.1250rem;
     color: rgb(0, 128, 128);
     text-align: center;
 }
@@ -373,28 +373,28 @@ img.padding_right_10 {
     width: 70%;
     float: center;
     font-weight: bold;
-    font-size: 76px;
+    font-size: 4.7500rem;
     color: #060606;
-    /* line-height: 90px; */
+    /* line-height: 5.6250rem; */
     text-align: center;
 }
 
 .banner_text{
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 1.0000rem;
     color: #060606;
-    margin: 0px;
+    margin: 0.0000rem;
 }
 
 .btn_main {
     width: 100%;
     display: flex;
-    padding-top: 30px;
+    padding-top: 1.8750rem;
 }
 
 .quote_bt {
-    width: 180px;
+    width: 11.2500rem;
     float: left;
 }
 
@@ -402,10 +402,10 @@ img.padding_right_10 {
     width: 100%;
     float: left;
     background-color: #252525;
-    padding: 8px 10px;
+    padding: 0.5000rem 0.6250rem;
     color: #fafafa;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.1250rem;
 }
 .quote_bt a:hover{ 
     color: #fafafa; 
@@ -416,19 +416,19 @@ img.padding_right_10 {
     background-color: #0c426e;
 }
 .contact_bt {
-    width: 180px;
+    width: 11.2500rem;
     float: left;
-    margin-left: 15px;
+    margin-left: 0.9375rem;
 }
 
 .contact_bt a{ 
     width: 100%;
     float: left;
     background-color: #252525;
-    padding: 8px 10px;
+    padding: 0.5000rem 0.6250rem;
     color: #fafafa;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.1250rem;
 }
 .contact_bt a:hover{ 
     color: #fafafa; 
@@ -443,24 +443,24 @@ img.padding_right_10 {
 
 #main_slider a.carousel-control-prev {
     position: absolute;
-    left: 1137px;
+    left: 71.0625rem;
     top: 50%;
 }
 
 #main_slider a.carousel-control-next {
     position: absolute;
-    right: -95px;
+    right: -5.9375rem;
     top: 27%;
 }
 
 #main_slider a.carousel-control-down,
 #main_slider .carousel-control-prev,
 #main_slider .carousel-control-next {
-    width: 68px;
-    height: 68px;
+    width: 4.2500rem;
+    height: 4.2500rem;
     background: #252525;
     opacity: 1;
-    font-size: 20px;
+    font-size: 1.2500rem;
     color: #ffffff;
 }
 
@@ -488,7 +488,7 @@ img.padding_right_10 {
 
 .information_taital {
     width: 100%;
-    font-size: 30px;
+    font-size: 1.8750rem;
     color: #252525;
     text-align: center;
     font-weight: bold;
@@ -496,15 +496,15 @@ img.padding_right_10 {
 
 .information_taital::after {
     position: absolute;
-    width: 85px;
-    left: 0px;
-    right: 0px;
+    width: 5.3125rem;
+    left: 0.0000rem;
+    right: 0.0000rem;
     margin: 0 auto;
 }
 
 .services_taital {
     width: 100%;
-    font-size: 30px;
+    font-size: 1.8750rem;
     color: #252525;
     text-align: center;
     font-weight: bold;
@@ -512,29 +512,29 @@ img.padding_right_10 {
 .services_taital::after {
     content: '';
     position: absolute;
-    width: 85px;
-    height: 10px;
+    width: 5.3125rem;
+    height: 0.6250rem;
     background-color: #000;
-    left: 0px;
-    right: 0px;
+    left: 0.0000rem;
+    right: 0.0000rem;
     margin: 0 auto;
-    bottom: 0px;
-    border-radius: 100px;
+    bottom: 0.0000rem;
+    border-radius: 6.2500rem;
 }
 .services_title {
     width: 100%;
-    font-size: 30px;
+    font-size: 1.8750rem;
     color: #252525;
     text-align: center;
     font-weight: bold;
 }
 .services_text {
     width: 100%;
-    font-size: 16px;
+    font-size: 1.0000rem;
     color: #000;
     text-align: center;
-    margin: 0px;
-    padding-top: 30px;
+    margin: 0.0000rem;
+    padding-top: 1.8750rem;
 }
 .services_box {
     width: 100%;
@@ -543,29 +543,29 @@ img.padding_right_10 {
 .express_text {
     width: 100%;
     float: left;
-    font-size: 26px;
+    font-size: 1.6250rem;
     color: #252525;
     text-align: center;
-    padding-top: 68px;
+    padding-top: 4.2500rem;
 }
 .lorem_text{
     width: 90%;
     margin: 0 auto;
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: #252525;
     text-align: center;
 }
 .seemore_bt{
-    width: 170px;
+    width: 10.6250rem;
     margin: 0 auto;
 }
 .seemore_bt a {
     width: 100%;
     float: left;
-    font-size: 18px;
+    font-size: 1.1250rem;
     color: #000;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 1.2500rem;
 }
 .seemore_bt a:hover{
     color: #0c426e;
@@ -575,10 +575,10 @@ img.padding_right_10 {
     float: left;
 }
 .padding_right_0{
-    padding-right: 0px;
+    padding-right: 0.0000rem;
 }
 .padding_left_0{
-    padding-left: 0px;
+    padding-left: 0.0000rem;
 }
 /* services section end */
 
@@ -594,14 +594,14 @@ img.padding_right_10 {
     background-image: url(../images/img-4.png);
     height: auto;
     background-repeat: no-repeat;
-    padding: 90px 0px;
-    margin-top: 90px;
+    padding: 5.6250rem 0.0000rem;
+    margin-top: 5.6250rem;
 }
 
 .clean_text{
     width: 100%;
     float: left;
-    font-size: 30px;
+    font-size: 1.8750rem;
     color: #ffffff;
     text-align: center;
     font-weight: 500;
@@ -609,15 +609,15 @@ img.padding_right_10 {
 .ipsum_text{
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 1.0000rem;
     color: rgb(0, 0, 0);
     text-align: center;
-    margin: 0px;
+    margin: 0.0000rem;
 }
 .person_text{
     width: 100%;
     float: center;
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: rgb(0, 0, 0);
     text-align: left;
     font-weight: 300;
@@ -625,26 +625,26 @@ img.padding_right_10 {
 	white-space: normal;   /* 기본 줄바꿈 설정 */
 }
 .quote_bt_1{
-    width: 170px;
+    width: 10.6250rem;
     margin: 0 auto;
     text-align: center;
 }
 .quote_bt_1 a{
     width: 100%;
     float: left;
-    font-size: 18px;
+    font-size: 1.1250rem;
     color: #0b0b0b;
     background-color: #ffffff;
-    padding: 8px 15px;
+    padding: 0.5000rem 0.9375rem;
 }
 .quote_bt_1 a {
     width: 100%;
     float: left;
-    font-size: 18px;
+    font-size: 1.1250rem;
     color: #0b0b0b;
     background-color: #ffffff;
-    padding: 8px 15px;
-    margin-top: 50px;
+    padding: 0.5000rem 0.9375rem;
+    margin-top: 3.1250rem;
 }
 .quote_bt_1 a:hover {
     color: #ffffff;
@@ -665,14 +665,14 @@ img.padding_right_10 {
 }
 .choose_box {
     width: 100%;
-    padding: 40px 20px;
+    padding: 2.5000rem 1.2500rem;
 }
 .choose_box:hover{
     background-color: #0c426e;
 }
 .choose_box:hover .number_text{
     color: #ffffff;
-    border: 1px solid #ffffff;
+    border: 0.0625rem solid #ffffff;
 }
 .choose_box:hover .trusted_text{
     color: #ffffff;
@@ -685,30 +685,30 @@ img.padding_right_10 {
     display: flex;
 }
 .number_text {
-    width: 40px;
-    height: 35px;
-    font-size: 16px;
+    width: 2.5000rem;
+    height: 2.1875rem;
+    font-size: 1.0000rem;
     color: #0c426e;
     border-radius: 100%;
-    border: 1px solid #0c426e;
+    border: 0.0625rem solid #0c426e;
     text-align: center;
-    padding: 5px 0px;
+    padding: 0.3125rem 0.0000rem;
     font-weight: 600;
 }
 .trusted_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 1.0000rem;
     color: #0c426e;
-    padding-left: 20px;
-    padding-top: 5px;
+    padding-left: 1.2500rem;
+    padding-top: 0.3125rem;
     font-weight: 600;
 }
 .dummy_text {
     width: 100%;
-    font-size: 14px;
+    font-size: 0.8750rem;
     color: #000;
-    margin: 0px;
+    margin: 0.0000rem;
 }
 /* choose section end */
 /* testimonial section start */
@@ -716,11 +716,11 @@ img.padding_right_10 {
 .testimonial_section {
     width: 100%;
     float: left;
-    padding-bottom: 90px;
+    padding-bottom: 5.6250rem;
 }
 .testimonial_taital {
     width: 100%;
-    font-size: 30px;
+    font-size: 1.8750rem;
     color: #111111;
     text-align: center;
     font-weight: bold;
@@ -728,19 +728,19 @@ img.padding_right_10 {
 .testimonial_taital::after {
     content: '';
     position: absolute;
-    width: 85px;
-    height: 10px;
+    width: 5.3125rem;
+    height: 0.6250rem;
     background-color: #252525;
-    left: 0px;
-    right: 0px;
+    left: 0.0000rem;
+    right: 0.0000rem;
     margin: 0 auto;
-    bottom: 0px;
-    border-radius: 100px;
+    bottom: 0.0000rem;
+    border-radius: 6.2500rem;
 }
 .testimonial_section_2 {
     width: 100%;
     float: left;
-    padding-top: 50px;
+    padding-top: 3.1250rem;
 }
 
 .testimonial_box {
@@ -767,39 +767,39 @@ img.padding_right_10 {
 
 .testimonial_text {
     width: 100%;
-    font-size: 16px;
+    font-size: 1.0000rem;
     color: #0c0c0c;
-    margin: 0px;
-    padding-left: 20px;
-    padding-top: 30px;
+    margin: 0.0000rem;
+    padding-left: 1.2500rem;
+    padding-top: 1.8750rem;
 }
 .joech_text {
     width: 100%;
     float: left;
-    font-size: 20px;
+    font-size: 1.2500rem;
     color: #0c0c0c;
-    padding-left: 20px;
+    padding-left: 1.2500rem;
     padding-bottom: 0;
-    padding-top: 20px;
+    padding-top: 1.2500rem;
     text-transform: uppercase;
 }
 .customer_text{
     width: 100%;
     float: left;
-    font-size: 14px;
+    font-size: 0.8750rem;
     color: #0c426e;
-    margin: 0px;
-    padding-left: 20px;
+    margin: 0.0000rem;
+    padding-left: 1.2500rem;
 }
 
 #my_slider a.carousel-control-prev {
     position: absolute;
-    right: 40px;
+    right: 2.5000rem;
     top: 33%;
 }
 #my_slider a.carousel-control-next {
     position: absolute;
-    right: 40px;
+    right: 2.5000rem;
     top: 33%;
     background: #0c426e;
     color: #ffffff;
@@ -807,13 +807,13 @@ img.padding_right_10 {
 
 #my_slider .carousel-control-prev, 
 #my_slider .carousel-control-next {
-    width: 68px;
-    height: 68px;
+    width: 4.2500rem;
+    height: 4.2500rem;
     background: #0c0c0c;
     opacity: 1;
-    font-size: 20px;
+    font-size: 1.2500rem;
     color: #ffffff;
-    border-radius: 100px;
+    border-radius: 6.2500rem;
 }
 
 #my_slider .carousel-control-prev:hover, 
@@ -835,10 +835,10 @@ img.padding_right_10 {
 }
 .useful_text {
     width: 100%;
-    font-size: 24px;
+    font-size: 1.5000rem;
     color: #ffffff;
     font-family: 'Orbitron', sans-serif;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     font-weight: bold;
 }
 .footer_menu {
@@ -846,12 +846,12 @@ img.padding_right_10 {
     float: left;
 }
 .footer_menu ul {
-    margin: 0px;
-    padding: 0px;
+    margin: 0.0000rem;
+    padding: 0.0000rem;
 }
 .footer_menu li {
-    padding-top: 5px;
-    font-size: 16px;
+    padding-top: 0.3125rem;
+    font-size: 1.0000rem;
     color: #b1b6c2;
 }
 .footer_menu li a {
@@ -866,31 +866,31 @@ img.padding_right_10 {
 .Enter_text {
     width: 100%;
     float: left;
-    font-size: 18px;
+    font-size: 1.1250rem;
     color: #162448;
     background-color: #ffffff;
-    padding: 8px 10px;
-    margin-top: 10px;
-    border: 0px;
+    padding: 0.5000rem 0.6250rem;
+    margin-top: 0.6250rem;
+    border: 0.0000rem;
     text-align: center;
 }
 input.Enter_text::placeholder {
     color: #162448;
 }
 .subscribe_bt {
-    width: 190px;
+    width: 11.8750rem;
     float: left;
-    margin-top: 20px;
+    margin-top: 1.2500rem;
 }
 
 .subscribe_bt a {
     width: 100%;
     float: left;
-    font-size: 18px;
+    font-size: 1.1250rem;
     color: #ffffff;
     background-color: #0c426e;
     text-align: center;
-    padding: 8px 0px;
+    padding: 0.5000rem 0.0000rem;
     text-transform: uppercase;
 }
 
@@ -901,15 +901,15 @@ input.Enter_text::placeholder {
 .footer_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 1.0000rem;
     color: #b1b6c2;
-    margin: 0px;
-    padding-top: 10px;
+    margin: 0.0000rem;
+    padding-top: 0.6250rem;
 }
 .location_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 1.0000rem;
     color: #b1b6c2;
 }
 .location_text a {
@@ -919,7 +919,7 @@ input.Enter_text::placeholder {
     color: #ffffff;
 }
 .padding_left_15 {
-    padding-left: 15px;
+    padding-left: 0.9375rem;
 }
 
 .social_icon {
@@ -943,10 +943,10 @@ input.Enter_text::placeholder {
 .copyright_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 1.0000rem;
     color: #ffffff;
     text-align: center;
-    margin-left: 0px;
+    margin-left: 0.0000rem;
 }
 
 .copyright_text a { 
@@ -957,13 +957,13 @@ input.Enter_text::placeholder {
 }
 
 .margin_top_90{
-    margin-top: 90px;
+    margin-top: 5.6250rem;
 }
 .limited-size {
     width: 100%; /* 기본 너비 */
     height: auto; /* 기본 높이 */
-    max-width: 500px; /* 최대 너비 제한 */
-    max-height: 300px; /* 최대 높이 제한 */
+    max-width: 31.2500rem; /* 최대 너비 제한 */
+    max-height: 18.7500rem; /* 최대 높이 제한 */
     background-color: lightblue;
     overflow: none; /* 콘텐츠가 넘칠 경우 스크롤 활성화 */
 }
@@ -980,10 +980,10 @@ table {
 th, td {
     width: auto; /* 기본 너비 */
     height: auto; /* 기본 높이 */
-    padding: 10px;
-    padding: 8px;
+    padding: 0.6250rem;
+    padding: 0.5000rem;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0.0625rem solid #ddd;
     text-align: center;
 }
 
@@ -1024,7 +1024,7 @@ tbody tr:hover {
   background-size: cover;
   background-size: center;
   width: 100%;
-  height: 800px;
+  height: 50.0000rem;
   color: black;
   display:flex;
   justify-content: center;
@@ -1048,25 +1048,25 @@ tbody tr:hover {
 
 .arrow-container {
     position: fixed;
-    bottom: 20px;
+    bottom: 1.2500rem;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.6250rem;
     z-index:1000;
 }
 .arrow {
-    width: 50px;
-    height: 50px;
+    width: 3.1250rem;
+    height: 3.1250rem;
     background-color: #007bff;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 24px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.5000rem;
+    box-shadow: 0.0000rem 0.2500rem 0.3750rem rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 .section {
@@ -1075,6 +1075,6 @@ tbody tr:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    border-bottom: 2px solid gray;
+    font-size: 1.5000rem;
+    border-bottom: 0.1250rem solid gray;
 }
