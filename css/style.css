@@ -24,13 +24,42 @@ html {
      scroll-behavior: smooth;
 }
 
-body {
+/* 모바일 전용 스마트폰 */
+@media (max-width: 480px) {
+  body {
+    color: #666666;
+  }
+}
+
+/* 태블릿 세로모드 */
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    color: #666666;
+  }
+}
+
+/* 태블릿 (가로 모드) 및 작은 노트북 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
      color: #666666;
      font-size: 0.8750rem;
      font-family: 'Poppins', sans-serif;     
      line-height: 1.80857;
      font-weight: normal;
      overflow-x: hidden;
+  }
+}
+
+/* 데스크톱 & 대형 화면 */
+@media (min-width: 1025px) {
+  body {
+     color: #666666;
+     font-size: 0.8750rem;
+     font-family: 'Poppins', sans-serif;     
+     line-height: 1.80857;
+     font-weight: normal;
+     overflow-x: hidden;
+  }
 }
 
 a {
@@ -213,11 +242,11 @@ button {
     position: fixed;
     width: 100%;
     float: left;
-    padding: 1.2500rem 0.0000rem;
+    padding: 0.9rem 0.0000rem;
     z-index:2000;
 }
 
-.toggle_icon{ 
+.toggle_icon{
     font-size:2.0625rem;
     cursor:pointer; 
     color: #ffffff;
@@ -232,12 +261,26 @@ button {
     text-align: center;
 }
 
-.small_menu li{
-    font-weight: bold;
-    font-size: 2.1250rem;
-    color: #000080;
-    padding-right: 2%;
-    float: left;
+/* 휴대폰용 */
+@media (min-width: 769px) {
+    .small_menu li{
+        font-weight: bold;
+        font-size: 2.3rem;
+        color: #000080;
+        padding-right: 2%;
+        float: left;
+    }
+}
+
+/* 노트북 모니터용 */
+@media (max-width: 768px) {
+    .small_menu li{
+        font-weight: bold;
+        font-size: 1rem;
+        color: #000080;
+        padding-right: 2%;
+        float: left;
+    }
 }
 
 .small_menu li:hover{
@@ -279,10 +322,23 @@ img.padding_right_10 {
     width: 100%;
     display: flex;
 }
-.logo {
-    width: 50%;
-    float: left;
+
+/* 노트북 모니터용 */
+@media (min-width: 769px) {
+    .logo {
+        width: 50%;
+        float: left;
+    }
 }
+
+/* 휴대폰용 */
+@media (max-width: 768px) {
+    .logo {
+        width: 80%;
+        float: left;
+    }
+}
+
 .menu_text {
     width: 10%;
     float: right;
@@ -1077,4 +1133,13 @@ tbody tr:hover {
     justify-content: center;
     font-size: 1.5000rem;
     border-bottom: 0.1250rem solid gray;
+}
+
+.name-custom-font {
+    color : "rgb(255, 0, 128)";
+    font-family: 'Times New Roman', serif;
+}
+
+.information-custom-font {
+    color : "rgb(255, 0, 128)";
 }
