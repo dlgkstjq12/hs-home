@@ -24,41 +24,39 @@ html {
      scroll-behavior: smooth;
 }
 
+body {
+   color: #666666;
+	font-family: 'Poppins', sans-serif;     
+	line-height: 1.80857;
+	font-weight: normal;
+	overflow-x: hidden;
+}
+
 /* 모바일 전용 스마트폰 */
 @media (max-width: 480px) {
-  body {
-    color: #666666;
-  }
+   body{
+      font-size : 0.8750rem;
+   }
 }
 
 /* 태블릿 세로모드 */
 @media (min-width: 481px) and (max-width: 768px) {
-  body {
-    color: #666666;
-  }
+   body{
+      font-size : 0.8750rem;
+   }
 }
 
 /* 태블릿 (가로 모드) 및 작은 노트북 */
 @media (min-width: 769px) and (max-width: 1024px) {
-  body {
-     color: #666666;
-     font-size: 0.8750rem;
-     font-family: 'Poppins', sans-serif;     
-     line-height: 1.80857;
-     font-weight: normal;
-     overflow-x: hidden;
-  }
+   body{
+      font-size : 0.8750rem;
+   }
 }
 
 /* 데스크톱 & 대형 화면 */
 @media (min-width: 1025px) {
   body {
-     color: #666666;
      font-size: 0.8750rem;
-     font-family: 'Poppins', sans-serif;     
-     line-height: 1.80857;
-     font-weight: normal;
-     overflow-x: hidden;
   }
 }
 
@@ -261,26 +259,40 @@ button {
     text-align: center;
 }
 
-/* 휴대폰용 */
-@media (min-width: 769px) {
-    .small_menu li{
-        font-weight: bold;
-        font-size: 2.3rem;
-        color: #000080;
-        padding-right: 2%;
-        float: left;
-    }
+/* 공통 */
+.small_menu li{
+    font-weight: bold;
+    color: #000080;
+    padding-right: 2%;
+    float: left;
 }
 
-/* 노트북 모니터용 */
-@media (max-width: 768px) {
-    .small_menu li{
-        font-weight: bold;
-        font-size: 1rem;
-        color: #000080;
-        padding-right: 2%;
-        float: left;
-    }
+/* 모바일 전용 스마트폰 */
+@media (max-width: 480px) {
+   body{
+      font-size : 0.8rem;
+   }
+}
+
+/* 태블릿 세로모드 */
+@media (min-width: 481px) and (max-width: 768px) {
+   body{
+      font-size : 0.8rem;
+   }
+}
+
+/* 태블릿 (가로 모드) 및 작은 노트북 */
+@media (min-width: 769px) and (max-width: 1024px) {
+   body{
+      font-size : 1.8rem;
+   }
+}
+
+/* 데스크톱 & 대형 화면 */
+@media (min-width: 1025px) {
+  body {
+     font-size: 1.8rem;
+  }
 }
 
 .small_menu li:hover{
@@ -1136,10 +1148,12 @@ tbody tr:hover {
 }
 
 .name-custom-font {
+    font-size: 3rem;
     color : "rgb(255, 0, 128)";
     font-family: 'Times New Roman', serif;
 }
 
 .information-custom-font {
+    font-size: 1rem;
     color : "rgb(255, 0, 128)";
 }
