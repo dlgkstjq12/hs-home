@@ -608,6 +608,20 @@ img.padding_right_10 {
     width: 100%;
 }
 
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개의 열 */
+    gap: 10px; /* 이미지 간격 */
+    width: 100%; /* 전체 컨테이너 크기 조절 */
+    margin: auto; /* 가운데 정렬 */
+}
+
+.image-container img {
+    width: 100%; /* 이미지가 부모 요소를 채우도록 설정 */
+    height: auto; /* 비율 유지 */
+    display: block; /* inline 속성 제거 */
+}
+
 .express_text {
     width: 100%;
     float: left;
@@ -640,8 +654,19 @@ img.padding_right_10 {
 }
 .image_1{
     width: 100%;
+    float: right;
+}
+
+.image_2{
+    width: 100%;
+    float: center;
+}
+
+.image_3{
+    width: 100%;
     float: left;
 }
+
 .padding_right_0{
     padding-right: 0.0000rem;
 }
@@ -1048,14 +1073,16 @@ table {
 th, td {
     width: auto; /* 기본 너비 */
     height: auto; /* 기본 높이 */
-    padding: 0.6250rem;
+/*     padding: 0.6250rem;
     padding: 0.5000rem;
+    font-size : 0.5rem; */
     text-align: left;
     border-bottom: 0.0625rem solid #ddd;
     text-align: center;
 }
 
 th {
+    /* font-size : 0.5rem; */
     background-color: #1b1b1b;
     color: #ddd;
 }
@@ -1065,6 +1092,42 @@ tbody tr:hover {
     background-color: #d3d3d3;
     opacity: 0.9;
     cursor: pointer;
+}
+
+/* 모바일 전용 스마트폰 */
+@media (max-width: 480px) {
+   th, td{
+      padding: 0.3rem;
+      padding: 0.25rem;
+      font-size : 0.6rem;
+   }
+}
+
+/* 태블릿 세로모드 */
+@media (min-width: 481px) and (max-width: 768px) {
+   th, td{
+      padding: 0.3rem;
+      padding: 0.25rem;
+      font-size : 0.6rem;
+   }
+}
+
+/* 태블릿 (가로 모드) 및 작은 노트북 */
+@media (min-width: 769px) and (max-width: 1024px) {
+   th, td{
+      padding: 0.6rem;
+      padding: 0.5rem;
+      font-size : 1rem;
+   }
+}
+
+/* 데스크톱 & 대형 화면 */
+@media (min-width: 1025px) {
+  th, td {
+      padding: 0.6rem;
+      padding: 0.5rem;
+      font-size : 1rem;
+  }
 }
 
 @keyframes fadein {
@@ -1097,8 +1160,7 @@ tbody tr:hover {
   display:flex;
   justify-content: center;
   align-items: center;
-  
-    
+  filter: sepia(80%);
   /* 추가 */
   position: relative;
   isolation: isolate;
@@ -1112,6 +1174,10 @@ tbody tr:hover {
   z-index: -1;
   inset: 0;
   opacity: 0.4;
+}
+
+.sepia {
+  filter: sepia(80%);
 }
 
 .arrow-container {
@@ -1154,6 +1220,6 @@ tbody tr:hover {
 }
 
 .information-custom-font {
-    font-size: 1rem;
+    font-size: 0.6rem;
     color : "rgb(255, 0, 128)";
 }
