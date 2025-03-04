@@ -26,10 +26,10 @@ html {
 
 body {
    color: #666666;
-	font-family: 'Poppins', sans-serif;     
-	line-height: 1.80857;
-	font-weight: normal;
-	overflow-x: hidden;
+   font-family: 'Poppins', sans-serif;     
+   line-height: 1.80857;
+   font-weight: normal;
+   overflow-x: hidden;
 }
 
 /* 모바일 전용 스마트폰 */
@@ -608,6 +608,22 @@ img.padding_right_10 {
     width: 100%;
 }
 
+.services_small_title {
+    width: auto;
+    font-size: 1rem;
+    color: rgb(255, 128, 64);
+    text-align: left;
+    font-weight: bold;
+}
+
+.services_small_contents {
+    width: 100%;
+    font-size: 1rem;
+    color: #000;
+    text-align: left;
+    font-weight: bold;
+}
+
 .image-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3개의 열 */
@@ -714,8 +730,9 @@ img.padding_right_10 {
     color: rgb(0, 0, 0);
     text-align: left;
     font-weight: 300;
-	word-wrap: break-word; /* 긴 단어를 자를 수 있음 */
-	white-space: normal;   /* 기본 줄바꿈 설정 */
+    margin-left:2rem;
+    word-wrap: break-word;
+    white-space: normal;
 }
 .quote_bt_1{
     width: 10.6250rem;
@@ -1222,4 +1239,8 @@ tbody tr:hover {
 .information-custom-font {
     font-size: 0.6rem;
     color : "rgb(255, 0, 128)";
+}
+
+.my-underline {
+  text-decoration: underline;
 }
