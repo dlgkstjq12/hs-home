@@ -32,7 +32,7 @@
    <body>
       <!--header section start -->
       <div class="header_section">
-         <div class="container-fluid">
+         <!--<div class="container-fluid">-->
             <div class="costum_header">
                <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
                <div class="small_menu">
@@ -46,7 +46,7 @@
                   </ul>
                </div>
             </div>
-         </div>
+         <!--</div>-->
       </div>
       <!-- header section end -->
       
@@ -372,7 +372,9 @@
                               </div>
                               <div class="client_text_section">
                                  <p class="testimonial_text">미래를 준비하고 발전할 수 있는 프로그래머</p>
-                                 <h4 class="joech_text">Han Sub Lee (2020.04 ~ 2024.12 - 경력 4년 6개월)</h4>
+                                 <h4 class="joech_text">Han Sub Lee</h4>
+                                 <h4 class="joech_text">(2020.04 ~ 2024.12)</h4>
+                                 <h4 class="joech_text">(경력 4년 6개월)</h4>
                                  <p class="customer_text">전화번호 : 010-7285-1455</p>
                                  <p class="customer_text">이메일 : dlgkstjq623@naver.com</p>
                                  <p class="customer_text">주소 : 인천광역시 남동구 만수동 만수서로 105번길 40-18</p>
@@ -427,20 +429,32 @@
       <script src="js/owl.carousel.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
       <script>
+         //화면 로딩시 실행
          $(document).ready(function(){
+            //스크롤바 셋팅
+            allowSet();
+            
+            //페이지 로딩시 애니메이션
+            loadingSet();
+         });
+
+         function allowSet(){
             $(".fancybox").fancybox({
                openEffect: "none",
                closeEffect: "none"
             });
-            
             $(".zoom").hover(function(){
-            
                $(this).addClass('transition');
                }, function(){
-            
                   $(this).removeClass('transition');
                });
-         });
+         }
+
+         //페이지 로딩시 에니메이션
+         function loadingSet(){
+            document.getElementById("section1").classList.add("slide-down");
+            document.getElementById("section1").classList.add("slide-down");
+         }
          
          function openNav() {
             document.getElementById("myNav").style.width = "100%";

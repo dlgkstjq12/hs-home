@@ -240,7 +240,7 @@ button {
     position: fixed;
     width: 100%;
     float: left;
-    padding: 0.9rem 0.0000rem;
+    padding: 0.5rem 0.0000rem;
     z-index:2000;
 }
 
@@ -251,6 +251,7 @@ button {
 }
 
 .small_menu {
+    padding-left: 0.7rem;
     width: 100%;
 }
 
@@ -261,7 +262,9 @@ button {
 
 /* 공통 */
 .small_menu li{
+    font-family: 'Ownglyph_ParkDaHyun';
     font-weight: bold;
+    text-align: center;
     color: #000080;
     padding-right: 2%;
     float: left;
@@ -310,6 +313,7 @@ img.padding_right_10 {
 /* 노트북 모니터용 */
 @media (min-width: 769px) {
     .logo {
+        padding-left: 1rem;
         width: 50%;
         float: left;
     }
@@ -318,6 +322,7 @@ img.padding_right_10 {
 /* 휴대폰용 */
 @media (max-width: 768px) {
     .logo {
+        padding-left: 1rem;
         width: 80%;
         float: left;
     }
@@ -404,7 +409,7 @@ img.padding_right_10 {
 .banner_large_taital {
     width: 30%;
     font-weight: bold;
-    font-size: 3.1250rem;
+    font-size: 2.8rem;
     color: rgb(0, 128, 128);
     text-align: center;
 }
@@ -413,9 +418,9 @@ img.padding_right_10 {
     width: 70%;
     float: center;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #060606;
-    /* line-height: 5.6250rem; */
+    padding-bottom: 20%;
     text-align: center;
 }
 
@@ -528,10 +533,11 @@ img.padding_right_10 {
 
 .information_taital {
     width: 100%;
-    font-size: 1.8750rem;
+    font-size: 1.6rem;
     color: #252525;
     text-align: center;
     font-weight: bold;
+    font-family: 'CookieRun-Regular';
 }
 
 .information_taital::after {
@@ -544,10 +550,11 @@ img.padding_right_10 {
 
 .services_taital {
     width: 100%;
-    font-size: 1.8750rem;
+    font-size: 1.6rem;
     color: #252525;
     text-align: center;
     font-weight: bold;
+    font-family: 'CookieRun-Regular';
 }
 .services_taital::after {
     content: '';
@@ -567,6 +574,7 @@ img.padding_right_10 {
     color: #252525;
     text-align: center;
     font-weight: bold;
+	font-family: 'CookieRun-Regular';
 }
 .services_text {
     width: 100%;
@@ -575,6 +583,7 @@ img.padding_right_10 {
     text-align: center;
     margin: 0.0000rem;
     padding-top: 1.8750rem;
+	font-family: 'GongGothicMedium';
 }
 .services_box {
     width: 100%;
@@ -705,6 +714,7 @@ img.padding_right_10 {
     /* margin-left:2rem; */
     word-wrap: break-word;
     white-space: normal;
+    font-family: 'GongGothicMedium';
 }
 .quote_bt_1{
     width: 10.6250rem;
@@ -802,10 +812,11 @@ img.padding_right_10 {
 }
 .testimonial_taital {
     width: 100%;
-    font-size: 1.8750rem;
+    font-size: 1.6rem;
     color: #111111;
     text-align: center;
     font-weight: bold;
+    font-family: 'CookieRun-Regular';
 }
 .testimonial_taital::after {
     content: '';
@@ -854,7 +865,9 @@ img.padding_right_10 {
     margin: 0.0000rem;
     padding-left: 1.2500rem;
     padding-top: 1.8750rem;
+    font-family: 'CookieRun-Regular';
 }
+
 .joech_text {
     width: 100%;
     float: left;
@@ -864,7 +877,9 @@ img.padding_right_10 {
     padding-bottom: 0;
     padding-top: 1.2500rem;
     text-transform: uppercase;
+    font-family: 'GongGothicMedium';
 }
+
 .customer_text{
     width: 100%;
     float: left;
@@ -872,6 +887,7 @@ img.padding_right_10 {
     color: #0c426e;
     margin: 0.0000rem;
     padding-left: 1.2500rem;
+    font-family: 'GongGothicMedium';
 }
 
 #my_slider a.carousel-control-prev {
@@ -1062,9 +1078,7 @@ table {
 th, td {
     width: auto; /* 기본 너비 */
     height: auto; /* 기본 높이 */
-/*     padding: 0.6250rem;
-    padding: 0.5000rem;
-    font-size : 0.5rem; */
+    font-family: 'GongGothicMedium';
     text-align: left;
     border-bottom: 0.0625rem solid #ddd;
     text-align: center;
@@ -1072,6 +1086,7 @@ th, td {
 
 th {
     /* font-size : 0.5rem; */
+    font-family: 'GongGothicMedium';
     background-color: #1b1b1b;
     color: #ddd;
 }
@@ -1203,16 +1218,67 @@ tbody tr:hover {
 }
 
 .name-custom-font {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color : "rgb(255, 0, 128)";
-    font-family: 'Times New Roman', serif;
+    font-family: 'MaplestoryOTFBold';
 }
 
 .information-custom-font {
-    font-size: 2rem;
+    font-size: 1.2rem;
     color : "rgb(255, 0, 128)";
+    font-family: 'MaplestoryOTFBold';
+}
+
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ownglyph_ParkDaHyun';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*소제목용*/
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*세부내용용*/
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .my-underline {
   text-decoration: underline;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.slide-down {
+    animation: slideDown 1s ease-out forwards;
 }
