@@ -230,6 +230,21 @@ button {
      padding-bottom: 0.0000rem;
 }
 
+/* 모바일 전용 스마트폰 */
+@media (max-width: 480px) {
+   .layout_padding{
+       padding-top: 25%;
+   }
+}
+
+/* 태블릿 세로모드 */
+@media (min-width: 481px) and (max-width: 768px) {
+   .layout_padding{
+       padding-top: 25%;
+   }
+}
+
+
 .padding_0{
      padding: 0.0000rem;
 }
@@ -1312,28 +1327,31 @@ tbody tr:hover {
     animation: slideDown 1s ease-out forwards;
 }
 
-
-
 /* 모바일 전용 스마트폰 */
 @media (max-width: 480px) {
    .Header_mobile-navigation-menus{
+       position: absolute;
+       padding-left:1rem;
+       bottom: 0; /* 부모 요소의 하단에 정렬 */
        z-index: 3000rem;
        display: none;
        flex-direction: column;
        align-items:flex-start;
-       gap: 1rem;
+       gap: 3rem;
    }
 }
 
 /* 태블릿 세로모드 */
 @media (min-width: 481px) and (max-width: 768px) {
-	.Header_mobile-navigation-menus{
-		z-index: 3000rem;
-	    display: none;
-	    flex-direction: column;
-	    align-items:flex-start;
-	    gap: 1rem;
-	}
+    .Header_mobile-navigation-menus{
+        position: absolute;
+        bottom: 0; /* 부모 요소의 하단에 정렬 */
+        z-index: 3000rem;
+        display: none;
+        flex-direction: column;
+        align-items:flex-start;
+        gap: 3rem;
+    }
 }
 
 /* 태블릿 (가로 모드) 및 작은 노트북 */
@@ -1389,3 +1407,11 @@ tbody tr:hover {
         display: block;
     }
 }
+
+.mobile-navigation {
+    width: 100%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-family: 'CookieRun-Regular';
+}
+

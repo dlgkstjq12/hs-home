@@ -32,33 +32,44 @@
    <body>
       <!--header section start -->
       <div class="header_section">
-         <!--<div class="container-fluid">-->
-            <div class="costum_header">
-               <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
-               <div class="small_menu">
-                  <ul>
-                     <li onclick="moveSections(0)"><a>【Top】</a></li>
-                     <li onclick="moveSections(1)"><a>【Skill】</a></li>
-                     <li onclick="moveSections(2)"><a>【Information】</a></li>
-                     <li onclick="moveSections(3)"><a>【Statement】</a></li>
-                     <li onclick="moveSections(4)"><a>【Projects】</a></li>
-                     <li onclick="moveSections(5)"><a>【Profile】</a></li>
-                  </ul>
-               </div>
-               <div class="toggle-div">
-                   <img class="toggle-icon" src="images/toggle-icon.png" onclick="toggleVisibility()">
-               </div>
-            </div>
-         <!--</div>-->
+        <div class="costum_header">
+           <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+           <div class="small_menu">
+              <ul>
+                 <li onclick="moveSections(0)"><a class = "">【Top】</a></li>
+                 <li onclick="moveSections(1)"><a>【Skill】</a></li>
+                 <li onclick="moveSections(2)"><a>【Information】</a></li>
+                 <li onclick="moveSections(3)"><a>【Statement】</a></li>
+                 <li onclick="moveSections(4)"><a>【Projects】</a></li>
+                 <li onclick="moveSections(5)"><a>【Profile】</a></li>
+              </ul>
+           </div>
+           <div class="toggle-div">
+               <img class="toggle-icon" src="images/toggle-icon.png" onclick="toggleVisibility()">
+           </div>
+           <!-- Header_mobile-navigation-menus -->
+           <nav id="toDiv" class="Header_mobile-navigation-menus">
+              <ul>
+                   <li onclick="moveSections(0)"><a class="mobile-navigation">【Top】</a></li>
+              </ul>
+              <ul>
+                   <li onclick="moveSections(1)"><a class="mobile-navigation">【Skill】</a></li>
+              </ul>
+              <ul>
+                   <li onclick="moveSections(2)"><a class="mobile-navigation">【Information】</a></li>
+              </ul>
+              <ul>
+                    <li onclick="moveSections(3)"><a class="mobile-navigation">【Statement】</a></li>
+              </ul>
+              <ul>
+                    <li onclick="moveSections(4)"><a class="mobile-navigation">【Projects】</a></li>
+              </ul>
+              <ul>
+                    <li onclick="moveSections(5)"><a class="mobile-navigation">【Profile】</a></li>
+              </ul>
+           </nav>
+        </div>
       </div>
-	  <nav id="toDiv" class="services_section layout_padding Header_mobile-navigation-menus">
-	      <button class="Header_mobile-navigation-menu__mwwCy" type="button" onclick="moveSections(0)">【Top】</button>
-	      <button class="Header_mobile-navigation-menu__mwwCy" type="button" onclick="moveSections(1)">【Skill】</button>
-	      <button class="Header_mobile-navigation-menu__mwwCy" type="button" onclick="moveSections(2)">【Information】</button>
-	      <button class="Header_mobile-navigation-menu__mwwCy" type="button" onclick="moveSections(3)">【Statement】</button>
-	      <button class="Header_mobile-navigation-menu__mwwCy" type="button" onclick="moveSections(4)">【Projects】</button>
-	      <button class="Header_mobile-navigation-menu__mwwCy" type="button" onclick="moveSections(5)">【Profile】</button>
-	  </nav>
       <!-- header section end -->
       
       <!-- banner section start -->
@@ -489,19 +500,25 @@
          
          function moveSections(direction) {
             sections[direction].scrollIntoView({ behavior: 'smooth' });
+            toggleVisibility();
          }
 		 
-		 function toggleVisibility(){
-			const div = document.getElementById("toDiv");
-			
-			// 현재 display 스타일 확인
-			if (window.getComputedStyle(div).display === "none") {
-			    div.style.display = "block";
-			} else {
-			    div.style.display = "none";
-			}
-		 }
-		 
+         //모바일에서 메뉴아이콘 클릭시 실행
+         function toggleVisibility(){
+            const div = document.getElementById("toDiv");
+            const costumHeader = document.getElementsByClassName("costum_header");
+            const MAIN_MEUM_NUM = 0;
+            
+            // 현재 display 스타일 확인
+            if (window.getComputedStyle(div).display === "none") {
+                div.style.display = "block";
+                costumHeader[MAIN_MEUM_NUM].style.height = "10rem";
+            } else {
+                div.style.display = "none";
+                costumHeader[MAIN_MEUM_NUM].style.height = "3rem";
+            }
+         }
+         
       </script>   
    </body>
 </html>
