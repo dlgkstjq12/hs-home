@@ -45,9 +45,20 @@
                      <li onclick="moveSections(5)"><a>【Profile】</a></li>
                   </ul>
                </div>
+               <div class="toggle-div">
+                   <img class="toggle-icon" src="images/toggle-icon.png" onclick="toggleVisibility()">
+               </div>
             </div>
          <!--</div>-->
       </div>
+	  <nav id="toDiv" class="services_section layout_padding Header_mobile-navigation-menus">
+	      <button class="Header_mobile-navigation-menu__mwwCy" type="button" onclick="moveSections(0)">【Top】</button>
+	      <button class="Header_mobile-navigation-menu__mwwCy" type="button" onclick="moveSections(1)">【Skill】</button>
+	      <button class="Header_mobile-navigation-menu__mwwCy" type="button" onclick="moveSections(2)">【Information】</button>
+	      <button class="Header_mobile-navigation-menu__mwwCy" type="button" onclick="moveSections(3)">【Statement】</button>
+	      <button class="Header_mobile-navigation-menu__mwwCy" type="button" onclick="moveSections(4)">【Projects】</button>
+	      <button class="Header_mobile-navigation-menu__mwwCy" type="button" onclick="moveSections(5)">【Profile】</button>
+	  </nav>
       <!-- header section end -->
       
       <!-- banner section start -->
@@ -437,7 +448,8 @@
             //페이지 로딩시 애니메이션
             loadingSet();
          });
-
+         
+         //스크롤바 셋팅
          function allowSet(){
             $(".fancybox").fancybox({
                openEffect: "none",
@@ -478,6 +490,18 @@
          function moveSections(direction) {
             sections[direction].scrollIntoView({ behavior: 'smooth' });
          }
+		 
+		 function toggleVisibility(){
+			const div = document.getElementById("toDiv");
+			
+			// 현재 display 스타일 확인
+			if (window.getComputedStyle(div).display === "none") {
+			    div.style.display = "block";
+			} else {
+			    div.style.display = "none";
+			}
+		 }
+		 
       </script>   
    </body>
 </html>
