@@ -343,14 +343,14 @@ img.padding_right_10 {
 /* 모바일 전용 스마트폰 */
 @media (max-width: 480px) {
    .costum_header{
-       height: 3rem;
+       height: 2rem;
    }
 }
 
 /* 태블릿 세로모드 */
 @media (min-width: 481px) and (max-width: 768px) {
     .costum_header{
-       height: 3rem;
+       height: 2rem;
 	}
 }
 
@@ -464,7 +464,6 @@ img.padding_right_10 {
     font-weight: bold;
     font-size: 2.3rem;
     color: #060606;
-    padding-bottom: 20%;
     text-align: center;
 }
 
@@ -1331,7 +1330,7 @@ tbody tr:hover {
 @media (max-width: 480px) {
    .Header_mobile-navigation-menus{
        position: absolute;
-       padding-left:1rem;
+       padding-left:1.2rem;
        bottom: 0; /* 부모 요소의 하단에 정렬 */
        z-index: 3000rem;
        display: none;
@@ -1410,7 +1409,7 @@ tbody tr:hover {
 
 .mobile-navigation {
     width: 100%;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: bold;
     font-family: 'CookieRun-Regular';
 }
