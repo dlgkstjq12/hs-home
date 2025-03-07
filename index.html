@@ -50,22 +50,22 @@
            <!-- Header_mobile-navigation-menus -->
            <nav id="toDiv" class="Header_mobile-navigation-menus">
               <ul>
-                   <li onclick="moveSections(0)"><a class="mobile-navigation">【Top】</a></li>
+                   <li onclick="mobileMoveSection(0)"><a class="mobile-navigation">【Top】</a></li>
               </ul>
               <ul>
-                   <li onclick="moveSections(1)"><a class="mobile-navigation">【Skill】</a></li>
+                   <li onclick="mobileMoveSection(1)"><a class="mobile-navigation">【Skill】</a></li>
               </ul>
               <ul>
-                   <li onclick="moveSections(2)"><a class="mobile-navigation">【Information】</a></li>
+                   <li onclick="mobileMoveSection(2)"><a class="mobile-navigation">【Information】</a></li>
               </ul>
               <ul>
-                    <li onclick="moveSections(3)"><a class="mobile-navigation">【Statement】</a></li>
+                    <li onclick="mobileMoveSection(3)"><a class="mobile-navigation">【Statement】</a></li>
               </ul>
               <ul>
-                    <li onclick="moveSections(4)"><a class="mobile-navigation">【Projects】</a></li>
+                    <li onclick="mobileMoveSection(4)"><a class="mobile-navigation">【Projects】</a></li>
               </ul>
               <ul>
-                    <li onclick="moveSections(5)"><a class="mobile-navigation">【Profile】</a></li>
+                    <li onclick="mobileMoveSection(5)"><a class="mobile-navigation">【Profile】</a></li>
               </ul>
            </nav>
         </div>
@@ -87,7 +87,7 @@
 
       <div id="section2" class="services_section layout_padding">
          <div class="container">
-            <h1 class="services_taital">보유 <span style="color: #0c426e">기술</span></h1>
+            <h1 class="services_taital">보유 기술</span></h1>
             <br>
             <div class="image-container">
                 <img src="images/eGovFrame-img.png" alt="Image 1">
@@ -198,7 +198,7 @@
          <div class="container">
             <h1 class="services_taital"><span style="color: rgb(0, 0, 0)">자기소개서</span>
               <!-- 이미지 태그 -->
-              <a id="downloadLink" href="pdf/이력서_20250219.pdf" target="_blank" download="pdf/이력서_20250219.pdf">
+              <a id="downloadLink" href="pdf/자기소개서_이한섭_250307.pdf" target="_blank" download="pdf/이력서_20250219.pdf">
                   <img src="images/download-img.png" alt="클릭하여 PDF 다운로드">
               </a>
             </h1>
@@ -306,7 +306,7 @@
          <div class="container">
             <h1 class="services_taital"><span style="color: rgb(0, 0, 0)">경력기술서</span>
               <!-- 이미지 태그 -->
-              <a id="downloadLink" href="pdf/이력서_20250219.pdf" target="_blank" download="pdf/이력서_20250219.pdf">
+              <a id="downloadLink" href="pdf/경력 및 경력기술서_이한섭_250307.pdf" target="_blank" download="pdf/이력서_20250219.pdf">
                   <img src="images/download-img.png" alt="클릭하여 PDF 다운로드">
               </a>
             </h1>
@@ -499,6 +499,10 @@
          }
          
          function moveSections(direction) {
+            sections[direction].scrollIntoView({ behavior: 'smooth' });
+         }
+         
+         function mobileMoveSection(direction){
             sections[direction].scrollIntoView({ behavior: 'smooth' });
             toggleVisibility();
          }
