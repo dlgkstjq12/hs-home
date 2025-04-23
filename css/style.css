@@ -343,14 +343,14 @@ img.padding_right_10 {
 /* 모바일 전용 스마트폰 */
 @media (max-width: 480px) {
    .costum_header{
-       height: 2rem;
+       height: 3rem;
    }
 }
 
 /* 태블릿 세로모드 */
 @media (min-width: 481px) and (max-width: 768px) {
     .costum_header{
-       height: 2rem;
+       height: 3rem;
 	}
 }
 
